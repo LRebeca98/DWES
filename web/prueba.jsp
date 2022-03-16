@@ -6,7 +6,7 @@
         <title>JSP Page</title>
     </head>
     <body>
-        <h1>Moe Syslak</h1>
-        <img src="src" alt="alt"/>
+        <h1>Logo Twitter</h1>
+        <img src="public/img/descarga.jpg" alt="Logo"/>
     </body>
 </html>
