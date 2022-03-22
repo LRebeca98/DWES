@@ -7,6 +7,7 @@ package org.japo.java.pll.controllers;
 
 import java.io.IOException;
 import java.io.PrintWriter;
+import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
@@ -20,21 +21,43 @@ import org.japo.java.libraries.UtilesEstaticos;
  */
 @WebServlet(name = "Controller", urlPatterns = {"", "/public/*"})
 public class Controller extends HttpServlet {
-    
+
     protected void processRequest(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
-//        System.out.println("Ruta de Contexto ...: " + request.getContextPath());
-//        System.out.println("Ruta del Servlet ...: " + request.getPathInfo());
-//        System.out.println("Ruta Local ...: " + request.getPathTranslated());
-//        System.out.println("Ruta Cadena de Petición ...: " + request.getQueryString());
-//        System.out.println("Ruta del Servlet ...: " + request.getServletPath());
-    if (request.getPathInfo().equals("/")) {
-        System.out.println("Primera Puerta");
-    } else {
-//        System.out.println("Segunda Puerta");
-    UtilesEstaticos.procesarEstatico(request, response);
-    }
-    
+        if (request.getPathInfo().equals("/")) {
+            // Request > Comando
+            String cmd = request.getParameter("cmd");
+
+            // Salida
+            String out;
+
+            // Discriminar comando
+            if (cmd == null) {
+//                out = "?cmd=landing";
+                out = "WEB-INF/views/visita/visita-landing.jsp";
+            } else if (cmd.equals("login")) {
+//                out = "?cmd=login";
+                out = "WEB-INF/views/usuario/usuario-login.jsp";
+            } else if (cmd.equals("logout")) {
+//                out = "?cmd=logout";
+                out = "WEB-INF/views/usuario/usuario-logout.jsp";
+            } else if (cmd.equals("main")) {
+//                out = "?cmd=main";
+                out = "WEB-INF/views/main/main-usuario.jsp";
+            } else {
+                out = "WEB-INF/views/message/recurso-inaccesible.jsp";
+            }
+
+            // Redirección
+            RequestDispatcher despachador = request.getRequestDispatcher(out);
+            
+            // Lanzar Vista
+            despachador.forward(request, response);
+
+        } else {
+            UtilesEstaticos.procesarEstatico(request, response);
+        }
+
     }
 
     // <editor-fold defaultstate="collapsed" desc="HttpServlet methods. Click on the + sign on the left to edit the code.">
