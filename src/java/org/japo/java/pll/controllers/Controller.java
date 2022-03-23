@@ -36,13 +36,13 @@ public class Controller extends HttpServlet {
 //                out = "?cmd=landing";
                 out = "WEB-INF/views/visita/visita-landing.jsp";
             } else if (cmd.equals("login")) {
-//                out = "?cmd=login";
+                out = "?cmd=login";
                 out = "WEB-INF/views/usuario/usuario-login.jsp";
             } else if (cmd.equals("logout")) {
-//                out = "?cmd=logout";
+                out = "?cmd=logout";
                 out = "WEB-INF/views/usuario/usuario-logout.jsp";
             } else if (cmd.equals("main")) {
-//                out = "?cmd=main";
+                out = "?cmd=main";
                 out = "WEB-INF/views/main/main-usuario.jsp";
             } else {
                 out = "WEB-INF/views/message/recurso-inaccesible.jsp";
