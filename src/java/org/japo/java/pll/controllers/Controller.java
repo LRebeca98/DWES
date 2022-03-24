@@ -45,12 +45,13 @@ public class Controller extends HttpServlet {
                 out = "?cmd=main";
                 out = "WEB-INF/views/main/main-usuario.jsp";
             } else {
+//                out = "?cmd=error";
                 out = "WEB-INF/views/message/recurso-inaccesible.jsp";
             }
 
             // Redirección
             RequestDispatcher despachador = request.getRequestDispatcher(out);
-            
+
             // Lanzar Vista
             despachador.forward(request, response);
 

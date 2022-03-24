@@ -1,0 +1,299 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+
+    box-sizing: border-box;
+}
+
+/* --- */
+
+html {
+    font-size: 16px;
+    font-size: 2vh;
+    font-size: 2vmax;
+    font-size: 2vmin;
+    /* font-size: clamp(1vmin, 1rem, 2vmin); */
+}
+
+body {
+    font-family: sans-serif;
+    /* font-family: "Lato", sans-serif; */
+}
+
+/* --- */
+
+#container {
+    height: 100vh;
+
+    padding: 1rem;
+
+    background-color: darkgray;
+    background-image: linear-gradient(rgb(139, 226, 248), rgb(218, 255, 203));
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* --- */
+
+main {
+    /* background-color: bisque; */
+
+    /*height: 95vh;*/
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* --- */
+
+h1 {
+    margin-bottom: 1rem;
+
+    color: burlywood;
+    color: indianred;
+    font-size: 3rem;
+    text-align: center;
+    text-shadow: 0.1rem 0.1rem 0.2rem rgba(0, 0, 0, 0.7);
+}
+
+/* --- */
+
+h2 {
+    margin-bottom: 1rem;
+
+    color: #660033;
+    font-size: 2rem;
+    text-align: center;
+    text-shadow: 0.1rem 0.1rem 0.2rem rgba(0, 0, 0, 0.7);
+}
+
+/* --- */
+
+form {
+    width: 100%;
+    max-width: 50rem;
+
+    padding: 1rem;
+
+    /* background-color: antiquewhite; */
+    background-color: burlywood;
+    border: solid 0.05rem white;
+    border-radius: 0.15rem;
+    box-shadow: 0.2rem 0.2rem 0.4rem rgba(0, 0, 0, 0.5);
+
+    position: relative;
+}
+
+/* --- */
+
+form .fieldset {
+    padding: 1rem 0;
+
+    /* background-color: chartreuse; */
+    display: flex;
+    align-items: center;
+}
+
+/* --- */
+
+form .fieldset > label:first-of-type {
+    width: 8rem;
+
+    margin-right: 1rem;
+
+    font-size: 1.6rem;
+    text-align: right;
+    text-shadow: 0.05rem 0.05rem 0.1rem rgba(0, 0, 0, 0.5);
+}
+
+form [type="text"] {
+    height: 3rem;
+
+    padding: 0 0.5rem;
+
+    font-family: sans-serif;
+    /* font-family: "Lato", sans-serif; */
+    font-size: 1.6rem;
+
+    border: none;
+    border: solid 0.05rem gray;
+    border-radius: 0.2rem 0 0 0.2rem;
+
+    outline: none;
+
+    display: flex;
+    align-items: center;
+    flex: auto;
+
+    position: relative;
+}
+
+form [type="password"] {
+    height: 3rem;
+
+    padding: 0 0.5rem;
+
+    font-family: sans-serif;
+    font-family: "Consolas", monospace;
+    font-size: 1.6rem;
+
+    border: none;
+    border: solid 0.05rem gray;
+    border-radius: 0.2rem 0 0 0.2rem;
+
+    outline: none;
+
+    display: flex;
+    align-items: center;
+    flex: auto;
+
+    position: relative;
+}
+
+form .fieldset > label:last-of-type {
+    height: 3rem;
+    width: 4rem;
+
+    font-size: 1.8rem;
+
+    background-color: gray;
+    background-color: antiquewhite;
+
+    border: solid 0.05rem gray;
+    border-left: none;
+    border-radius: 0 0.2rem 0.2rem 0;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* --- */
+
+.btn-pass {
+    position: absolute;
+    top: 94px;
+    right: 70px;
+
+    width: 6%;
+    height: 25px;
+}
+
+form > div:nth-child(2) > button > img {
+    object-fit: contain;
+}
+
+/* -- */
+
+form .buttonset {
+    padding: 1rem 0;
+
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+form .buttonset2 {
+    padding: 1rem 0;
+
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+/* --- */
+
+form button {
+    height: 2rem;
+    width: 10rem;
+    padding: 0;
+
+    font-family: sans-serif;
+    /* font-family: "Lato", sans-serif; */
+    font-size: 1.2rem;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+form .buttonset button:hover {
+    box-shadow: 1px 1px 2px black;
+}
+
+form .buttonset button:first-of-type:hover {
+    background-color: greenyellow;
+    color: white;
+}
+
+form .buttonset button:last-of-type:hover {
+    background-color: red;
+    color: white;
+}
+
+form .buttonset2 > button:first-of-type:hover {
+    background-color: cyan;
+    color: white;
+}
+
+form .buttonset2 > button:last-of-type:hover {
+    background-color: grey;
+    color: white;
+}
+
+
+/* --- */
+
+form .feedback {
+    color: red;
+
+    position: absolute;
+    left: 10.3rem;
+
+    display: none;
+}
+
+form .user {
+    top: 5.3rem;
+}
+
+form .pass {
+    top: 10.3rem;
+}
+
+/* --- */
+
+_form [type="text"]:invalid ~ .feedback {
+    display: block;
+}
+
+_form [type="password"]:invalid ~ .feedback {
+    display: block;
+}
+
+.mostrarPass {
+    display: flex;
+    justify-content: left;
+    align-content: center;
+
+    margin-left: 9rem;
+
+    font-size: 1.2rem;
+}
+
+.mostrarPass > input {
+    height: 17px;
+    width: 17px;
+}
+
+.mostrarPass > label {
+    margin-left: .6rem;
+    font-size: 18px;
+}
+
