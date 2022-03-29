@@ -7,10 +7,12 @@
         <link rel="stylesheet" href="public/css/visita/visita-landing.css"/>
     </head>
     <body>
+
         <div id="container">
-             <h1>Estás en visita</h1>
-        <img src="public/img/descarga.jpg" alt="Logo"/>
+            <main>
+                <h1>Estás en la vista Landing</h1>
+                <img src="public/img/descarga.jpg" alt="Logo"/>
+            </main>
         </div>
-       
     </body>
 </html>

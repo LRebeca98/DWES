@@ -45,6 +45,7 @@ public class Controller extends HttpServlet {
                 UtilesComandos.procesar(config, request, response);
             }
 
+
         } else {
             UtilesEstaticos.procesarEstatico(request, response);
         }
