@@ -43,6 +43,9 @@ public class Controller extends HttpServlet {
                 UtilesServicios.procesar(config, request, response);
             } else if (request.getParameter("cmd") != null) {
                 UtilesComandos.procesar(config, request, response);
+            } else {
+                // Página predeterminada
+                response.sendRedirect("?cmd=visita-landing");
             }
 
 
