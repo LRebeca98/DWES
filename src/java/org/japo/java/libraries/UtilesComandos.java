@@ -1,5 +1,6 @@
 package org.japo.java.libraries;
 
+import java.io.IOException;
 import java.lang.reflect.Constructor;
 import java.lang.reflect.InvocationTargetException;
 import java.util.logging.Level;
@@ -23,7 +24,7 @@ public final class UtilesComandos {
     public static void procesar(
             ServletConfig config,
             HttpServletRequest request,
-            HttpServletResponse response) throws ServletException {
+            HttpServletResponse response) throws ServletException, IOException {
 
         // Request > Nombre de Comando
         String cmdName = request.getParameter("cmd");

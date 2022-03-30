@@ -1,0 +1,32 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 16px;
+    /*font-size: 3vh;*/
+}
+
+body {
+    font-family: sans-serif;
+}
+
+/* --- */
+
+#container {
+    height: 100vh;
+    
+    display: grid;
+    place-items: center;
+
+    /*background-color: darkgray;*/
+    background-image: url("http://localhost:8080/web-app/public/img/golden.jpeg");
+    background-repeat: no-repeat;
+    background-size: contain;
+
+}
