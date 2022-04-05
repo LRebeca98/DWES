@@ -1,6 +1,5 @@
 package org.japo.java.bll.commands.visita;
 
-import org.japo.java.bll.commands.saludo.*;
 import java.io.IOException;
 import javax.servlet.ServletException;
 import org.japo.java.bll.commands.Command;

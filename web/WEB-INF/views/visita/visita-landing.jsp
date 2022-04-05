@@ -10,8 +10,10 @@
 
         <div id="container">
             <main>
-                <h1>Estás en la vista Landing</h1>
-                <img src="public/img/descarga.jpg" alt="Logo"/>
+                <h1>Aplicación Excelente</h1>
+<!--                <img src="public/img/descarga.jpg" alt="Logo"/>-->
+
+                <a href="?cmd=usuario-login">Ideltificación</a>  
             </main>
         </div>
     </body>
