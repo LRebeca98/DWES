@@ -24,7 +24,10 @@ public class CommandUsuarioLogin extends Command {
         } else if (op.equals("captura")) {
             //Lanzar Formulario
         } else if (op.equals("proceso")){
-            // Procesar Formulario                                 
+            // Procesar Formulario  
+//            out = "message/credencial-incorrecta";
+            out = "message/credencial-correcta";
+
         } else {
             //Lanzar formulario
         }
