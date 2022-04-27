@@ -8,9 +8,9 @@
     </head>
     <body>
         <div id="container">
-            <h2>Credencial Correcta</h2>
-            <p>La credencial introducida si está registrada.</p>
-            <a><a href="?cmd=usuario-login">Continuar</a>
+            <h2>Página principal</h2>
+            <p>Página principal Usuario Registrado</p>
+            <a><a href="#">Continuar</a>
             
         </div>
     </body>
