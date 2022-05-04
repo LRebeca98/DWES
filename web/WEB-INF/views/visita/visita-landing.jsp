@@ -9,17 +9,17 @@
         <link rel="stylesheet" href="public/css/partials/footer.css" />
     </head>
     <body>
- <%@include file="../partials/header.jsp" %>
+ 
         <div id="container">
-            
+        <%@include file="../partials/header.jspf" %>   
             <main>
                 <h1>Aplicación Excelente</h1>
 <!--                <img src="public/img/descarga.jpg" alt="Logo"/>-->
 
                 <a href="?cmd=usuario-login">Ideltificación</a>  
             </main>
-             
+        <%@include file="../partials/footer.jspf" %>
         </div>
-        <%@include file="../partials/footer.jsp" %>
+       
     </body>
 </html>

@@ -25,15 +25,26 @@ body {
 
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    justify-content: space-between;
+    /*align-items: center;*/
+    /*justify-content: center;*/
     gap: 1rem;
 }
 
 /* --- */
 
+#container main {
+    /*max-width: 30rem;*/
+    /*padding: 0 1rem;*/
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /*gap: 1rem;*/
+}
+
 #container form {
-    padding: 0 1rem;
+    /*padding: 0 1rem;*/
      
     display: flex;
     flex-direction: column;
@@ -41,6 +52,7 @@ body {
     /*align-items: center;*/
     gap: 1rem;
 }
+
 
 #container form .fieldset {
     display: flex;

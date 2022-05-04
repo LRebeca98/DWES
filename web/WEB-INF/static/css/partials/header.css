@@ -1,4 +1,4 @@
-.page-header {
+/*.page-header {
   height: 6rem;
 
   padding: .3rem 1rem;
@@ -11,14 +11,14 @@
   gap: 1rem;
 }
 
-/* --- */
+ --- 
 
 .page-header .logo {
   height: 100%;
 }
 
 
-/* --- */
+ --- 
 
 .page-header .logo img {
   height: 100%;
@@ -28,7 +28,7 @@
   filter: drop-shadow(.1rem .1rem .2rem rgba(0, 0, 0, 0.5));
 }
 
-/* --- */
+ --- 
 
 .page-header h1 {
   color: cornflowerblue;
@@ -38,7 +38,7 @@
   text-shadow: .1rem .1rem .2rem rgba(0, 0, 0, 0.5);
 }
 
-/* --- */
+ --- 
 
 .page-header .user {
   height: 100%;
@@ -48,5 +48,41 @@
 .page-header .user img {
   height: 100%;
 
-  /*filter: drop-shadow(.1rem .1rem .2rem rgba(0, 0, 0, 0.5));*/
+  filter: drop-shadow(.1rem .1rem .2rem rgba(0, 0, 0, 0.5));
+}*/
+
+
+.page-header {
+    height: 5rem;
+    
+    border-bottom: solid .1rem #666;
+    /*background-color: aquamarine;*/
+    /*pading: 0 1rem;*/
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap:1rem;
+
 }
+
+.page-header .logo {
+    height: 100%;
+    padding: 1rem;
+}
+
+.page-header img {
+    height: 100%;
+    width: auto;
+}
+
+.page-header .user img {
+    height: 100%;
+    width: auto;
+}
+
+.page-header .user {
+    height: 100%;
+    padding: 1rem;
+}
+
